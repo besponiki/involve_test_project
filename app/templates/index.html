@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/index" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.summ.label }}<br>
+            {{ form.summ(size=32) }}<br>
+
+        </p>
+        <p>
+            {{ form.description.label }}<br>
+            {{ form.description(cols=50, rows=4) }}<br>
+        </p>
+    <p>
+            {{ form.currency.label }}<br>
+            {{ form.currency }}<br>
+        </p>
+        <p>{{ form.submit() }}</p>
+
+    </form>
+</body>
+</html>
